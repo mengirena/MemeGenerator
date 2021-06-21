@@ -7,10 +7,12 @@ class MemeGenerator extends Component {
             topText: "",
             bottomText: "",
             randomImg: "http://i.imgflip.com/1bij.jpg",
+            favoriteImg: "http://i.imgflip.com/1bij.jpg",
             allMemeImgs: []
         }
         this.handleChange = this.handleChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
+        this.handleClick = this.handleClick.bind(this)
     }
     
     componentDidMount() {
@@ -32,6 +34,12 @@ class MemeGenerator extends Component {
         const randNum = Math.floor(Math.random() * this.state.allMemeImgs.length)
         const randMemeImg = this.state.allMemeImgs[randNum].url
         this.setState({ randomImg: randMemeImg })
+    }
+
+    handleClick(){
+        this.setState({
+            favoriteImg:this.state.randomImg
+        })
     }
     
     render() {
@@ -56,17 +64,17 @@ class MemeGenerator extends Component {
                 </form>
                 <div className="meme">
                     <div className="pre">
-                        <p>This !</p>
-                        <img src={this.state.randomImg} alt=""/>
+                        <span>This !</span>
+                        <img src={this.state.favoriteImg} alt=""/>
                         <h2 className="top">{this.state.topText}</h2>
                         <h2 className="bottom">{this.state.bottomText}</h2>
                     </div>
                     <div className="aft">
-                        <p>Generate to compare</p>
+                        <span>Generate to compare</span>
+                        <button onClick={this.handleClick}>Save to This!</button>
                         <img src={this.state.randomImg} alt=""/>
                         <h2 className="top">{this.state.topText}</h2>
                         <h2 className="bottom">{this.state.bottomText}</h2>
-                        <button>Save to This!</button>
                     </div>
                 </div>
             </div>
