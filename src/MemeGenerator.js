@@ -52,13 +52,22 @@ class MemeGenerator extends Component {
                         value={this.state.bottomText}
                         onChange={this.handleChange}
                     /> 
-                
                     <button>Gen</button>
                 </form>
                 <div className="meme">
-                    <img src={this.state.randomImg} alt="" />
-                    <h2 className="top">{this.state.topText}</h2>
-                    <h2 className="bottom">{this.state.bottomText}</h2>
+                    <div className="pre">
+                        <p>This !</p>
+                        <img src={this.state.randomImg} alt=""/>
+                        <h2 className="top">{this.state.topText}</h2>
+                        <h2 className="bottom">{this.state.bottomText}</h2>
+                    </div>
+                    <div className="aft">
+                        <p>Generate to compare</p>
+                        <img src={this.state.randomImg} alt=""/>
+                        <h2 className="top">{this.state.topText}</h2>
+                        <h2 className="bottom">{this.state.bottomText}</h2>
+                        <button>Save to This!</button>
+                    </div>
                 </div>
             </div>
         )
