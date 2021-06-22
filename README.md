@@ -27,6 +27,12 @@ Use `overflow` so the text can be wrapped to the width of the element size.
 
 ### How to use `text-shadow`
 
-The usage of `text-shadow` is 
+The usage of `text-shadow` is to provide `x-offset`, `y-offset`, `blur-radius` and `color`.
 
 ### Review media query
+
+```css
+@media [media-type] ([media-feature]) {
+  /* Styles! */
+}
+```
