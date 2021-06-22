@@ -1,6 +1,6 @@
 # Meme Generator
 
-[![Netlify Status](https://yourmemegenerator.netlify.app)
+[![Netlify Status]](https://yourmemegenerator.netlify.app)
 
 👆🏽 click to check the live page
 
@@ -8,8 +8,7 @@ The meme generator can
 
 ## Demo
 
-<img width="615" alt="Screen Shot" src="https://user-images.githubusercontent.com/51871665/122101457-2bafe380-cdc9-11eb-87fa-05396ee4cd60.png">
-
+<img width="615" alt="Screen Shot 2021-06-21 at 11 19 26 PM" src="https://user-images.githubusercontent.com/51871665/122873949-48777a00-d2e7-11eb-8407-ee3be353bb35.png">
 
 ## How it's built
 **Tech used:** React, JSX, HTML, CSS
